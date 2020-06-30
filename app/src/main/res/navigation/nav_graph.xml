@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.giftest.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_facebookFrescoFragment"
+            app:destination="@id/facebookFrescoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gifDrawableFragment"
+            app:destination="@id/gifDrawableFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_glideFragment"
+            app:destination="@id/glideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/facebookFrescoFragment"
+        android:name="com.example.giftest.FacebookFrescoFragment"
+        android:label="FacebookFrescoFragment" />
+
+    <fragment
+        android:id="@+id/gifDrawableFragment"
+        android:name="com.example.giftest.GifDrawableFragment"
+        android:label="GifDrawableFragment" />
+
+    <fragment
+        android:id="@+id/glideFragment"
+        android:name="com.example.giftest.GlideFragment"
+        android:label="GlideFragment" />
+
+</navigation>
